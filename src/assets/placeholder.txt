@@ -1,0 +1,1 @@
+This folder holds static assets such as images, icons, and media used by the portfolio.
