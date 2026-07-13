@@ -5,6 +5,10 @@ import { fileURLToPath, URL } from 'url'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+
+  // ✅ GitHub Pages ke liye
+  base: '/taslim-portfolio/',
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -19,6 +23,7 @@ export default defineConfig({
       '@animations': fileURLToPath(new URL('./src/animations', import.meta.url)),
     },
   },
+
   server: {
     proxy: {
       '/api': 'http://localhost:4000',
