@@ -416,7 +416,11 @@ function App() {
 
       <header className="topbar">
         <button className="brand" type="button" onClick={() => scrollToSection('home')}>
-          <span className="brand-mark"><img src="logo2.jpeg" alt="" /></span>
+       
+<img
+  src={`${import.meta.env.BASE_URL}logo2.jpeg`}
+  alt="Logo"
+/>
           <span>Taslim Ansari</span>
         </button>
 
@@ -508,7 +512,10 @@ function App() {
             </div>
             <motion.div className="hero-visual" animate={reducedMotion ? {} : { x: heroParallax.x, y: heroParallax.y }} transition={{ type: 'spring', stiffness: 60, damping: 15 }}>
               <div className="hero-image-card">
-             <img src="/taslim-portfolio/logo.jpeg" alt="Taslim" />
+            <img
+  src={`${import.meta.env.BASE_URL}logo.jpeg`}
+  alt="Taslim Ansari"
+/>
               </div>
               <div className="floating-card top-card">
                 <span>UI Systems</span>
