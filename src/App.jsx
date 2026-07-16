@@ -508,7 +508,7 @@ function App() {
             </div>
             <motion.div className="hero-visual" animate={reducedMotion ? {} : { x: heroParallax.x, y: heroParallax.y }} transition={{ type: 'spring', stiffness: 60, damping: 15 }}>
               <div className="hero-image-card">
-              <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Taslim Ansari" />
+             <img src="/taslim-portfolio/logo.jpeg" alt="Taslim" />
               </div>
               <div className="floating-card top-card">
                 <span>UI Systems</span>
